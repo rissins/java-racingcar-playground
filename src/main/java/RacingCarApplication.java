@@ -1,17 +1,13 @@
-import utill.Convert;
+import utill.CarName;
 import view.InputView;
 import view.ResultView;
 
 public class RacingCarApplication {
     public static void main(String[] args) {
         ResultView.askCarName();
-        Convert.splitString(InputView.inputCarName());
+        CarName.CheckNameLength(InputView.inputCarName());
         ResultView.askTryNumber();
         InputView.inputTryNumber();
 
-
-        }
     }
-
-
 }
