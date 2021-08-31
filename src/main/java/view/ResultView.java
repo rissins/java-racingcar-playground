@@ -9,4 +9,8 @@ public class ResultView {
     public static void askTryNumber(){
         System.out.println("시도할 횟수는 몇회인가요 ?");
     }
+
+    public static void resultProcess(){
+        System.out.println("실행 결과");
+    }
 }
