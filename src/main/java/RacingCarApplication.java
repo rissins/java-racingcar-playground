@@ -1,16 +1,24 @@
 import utill.CarGameProcess;
-import utill.CarName;
+import utill.Car;
 import view.InputView;
 import view.ResultView;
 
+import java.util.List;
+
 public class RacingCarApplication {
     public static void main(String[] args) {
+        InputView inputView = new InputView();
+
         ResultView.askCarName();
-        CarName.CheckNameLength(InputView.inputCarName());
+        Car car = new Car(inputView.inputCarName());
         ResultView.askTryNumber();
-        InputView.inputTryNumber();
+        inputView.inputTryNumber();
         ResultView.resultProcess();
-        CarGameProcess.printCarList();
+
+        car.printCarArray();
+//        inputView.inputCarName();
+//        car.CheckNameLength(inputView.getCarArray());
+//        CarGameProcess.printCarDefaultList();
 
     }
 }

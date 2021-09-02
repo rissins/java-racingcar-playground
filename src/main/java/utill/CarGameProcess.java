@@ -1,16 +1,21 @@
 package utill;
 
-import static utill.CarName.carArray;
+
+import view.InputView;
 
 public class CarGameProcess {
 
-    public static void printCarList() {
-        for (int i = 0; i < carArray.length; i++) {
-            System.out.print(carArray[i]+" : ");
-            randomCheckRun();
-            drawLine();
-        }
-    }
+//    public static void printCarDefaultList() {
+//        for (int i = 0; i < InputView.getCarArray().size(); i++) {
+//            System.out.println(InputView.getCarArray().get(i)+" : -");
+////            randomCheckRun();
+////            drawLine();
+//        }
+//    }
+
+//    public static void startRace(){
+//        printCarDefaultList();
+//    }
 
     public static boolean randomCheckRun(){
         if ((int)(Math.random()*9) >= 4){
@@ -24,6 +29,7 @@ public class CarGameProcess {
         if (randomCheckRun()){
             System.out.println("-");
         }
+        System.out.println();
     }
 }
 

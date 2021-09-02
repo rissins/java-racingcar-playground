@@ -1,16 +1,30 @@
 package view;
 
+import utill.Car;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class InputView {
 
     private static Scanner SCANNER = new Scanner(System.in);
 
-    public static String inputCarName(){
-        return SCANNER.next();
+    public List<String> inputCarName() {
+        return Arrays.asList(SCANNER.next().split(","));
     }
 
-    public static int inputTryNumber(){
+    public int inputTryNumber() {
         return SCANNER.nextInt();
     }
+
+
+
 }
+
+
+
+
+
+
