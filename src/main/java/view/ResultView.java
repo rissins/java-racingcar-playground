@@ -13,4 +13,12 @@ public class ResultView {
     public static void resultProcess(){
         System.out.println("실행 결과");
     }
+
+    public static void blankPrint(){
+        System.out.println();
+    }
+
+    public static void StartLine(){
+        System.out.print(" : -");
+    }
 }

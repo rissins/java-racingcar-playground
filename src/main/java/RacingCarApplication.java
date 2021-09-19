@@ -7,18 +7,25 @@ import java.util.List;
 
 public class RacingCarApplication {
     public static void main(String[] args) {
-        InputView inputView = new InputView();
+        CarGameProcess carGameProcess = new CarGameProcess();
 
         ResultView.askCarName();
-        Car car = new Car(inputView.inputCarName());
-        ResultView.askTryNumber();
-        inputView.inputTryNumber();
-        ResultView.resultProcess();
 
+
+        Car car = new Car(InputView.inputCarName(), 0);
+        Car car2 = new Car(InputView.inputCarName(), 0);
+        Car car3 = new Car(InputView.inputCarName(), 0);
+
+        ResultView.askTryNumber();
+        InputView inputView = new InputView(InputView.inputTryNumber());
+        ResultView.resultProcess();
+        car.Start();
         car.printCarArray();
-//        inputView.inputCarName();
-//        car.CheckNameLength(inputView.getCarArray());
-//        CarGameProcess.printCarDefaultList();
+//        for (int i = 0; i < inputView.getDefaultTryNumber(); i++) {
+//
+//            ResultView.blankPrint();
+//        }
+
 
     }
 }

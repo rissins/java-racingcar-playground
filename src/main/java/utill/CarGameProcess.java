@@ -17,7 +17,7 @@ public class CarGameProcess {
 //        printCarDefaultList();
 //    }
 
-    public static boolean randomCheckRun(){
+    public  boolean randomCheckRun(){
         if ((int)(Math.random()*9) >= 4){
             return true;
         }
@@ -25,11 +25,11 @@ public class CarGameProcess {
         return false;
     }
 
-    public static void drawLine(){
+    public  void drawLine(){
         if (randomCheckRun()){
-            System.out.println("-");
+            System.out.print("-");
         }
-        System.out.println();
+//        System.out.println();
     }
 }
 
